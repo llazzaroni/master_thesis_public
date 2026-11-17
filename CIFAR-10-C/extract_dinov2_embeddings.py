@@ -26,7 +26,7 @@ CORRUPTIONS = (
     "jpeg_compression", "motion_blur", "pixelate", "saturate", "shot_noise",
     "snow", "spatter", "speckle_noise", "zoom_blur",
 )
-DEFAULT_DATA_ROOT = Path("/cluster/scratch/llazzaroni/CIFAR_data")
+DEFAULT_DATA_ROOT = Path("data")
 MODEL_REPOSITORY = "facebookresearch/dinov2"
 MODEL_NAME = "dinov2_vits14"
 EMBEDDING_DIMENSION = 384

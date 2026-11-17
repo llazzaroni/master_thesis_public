@@ -28,7 +28,7 @@ CORRUPTIONS = (
 )
 SPLIT_NAMES = ("train", "val", "test")
 SPLIT_PROPORTIONS = (0.70, 0.15, 0.15)
-DEFAULT_DATA_ROOT = Path("/cluster/scratch/llazzaroni/CIFAR_data")
+DEFAULT_DATA_ROOT = Path("data")
 
 
 def parse_args() -> argparse.Namespace:

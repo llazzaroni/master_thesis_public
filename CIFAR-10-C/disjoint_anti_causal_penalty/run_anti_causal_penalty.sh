@@ -2,11 +2,11 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-DATA_ROOT="/cluster/scratch/llazzaroni/CIFAR_data"
-DATA_DIR="${DATA_ROOT}/CIFAR-10-C"
-SPLIT_FILE="${DATA_ROOT}/cifar10c_disjoint_environment_splits_seed_42.npz"
-BASELINE_ROOT="${DATA_ROOT}/disjoint_source_baseline_severity5"
-OUTPUT_ROOT="${DATA_ROOT}/disjoint_anti_causal_penalty_severity5"
+DATA_DIR="${CIFAR10C_DATA_DIR:-data/CIFAR-10-C}"
+RESULTS_ROOT="${CIFAR10C_RESULTS_ROOT:-results/cifar10c}"
+SPLIT_FILE="${RESULTS_ROOT}/cifar10c_disjoint_environment_splits_seed_42.npz"
+BASELINE_ROOT="${RESULTS_ROOT}/disjoint_source_baseline"
+OUTPUT_ROOT="${RESULTS_ROOT}/disjoint_anti_causal_penalty"
 EMBEDDING_ROOT=""
 EMBEDDING_PCA_COMPONENTS=""
 PSEUDO_TARGET_COUNT=""

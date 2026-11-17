@@ -3,8 +3,8 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-DATA_DIR="/cluster/scratch/llazzaroni/CIFAR_data/CIFAR-10-C"
-OUTPUT_ROOT="/cluster/scratch/llazzaroni/CIFAR_data/dinov2_vits14_embeddings"
+DATA_DIR="${CIFAR10C_DATA_DIR:-data/CIFAR-10-C}"
+OUTPUT_ROOT="${CIFAR10C_EMBEDDING_ROOT:-results/dinov2_vits14_embeddings}"
 BATCH_SIZE=512
 DEVICE=cuda
 MODEL_REPO=""

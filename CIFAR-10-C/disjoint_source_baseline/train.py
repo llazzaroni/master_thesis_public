@@ -28,7 +28,7 @@ spec.loader.exec_module(shared)
 
 CLASS_NAMES = shared.CLASS_NAMES
 CORRUPTIONS = shared.CORRUPTIONS
-DEFAULT_DATA_ROOT = Path("/cluster/scratch/llazzaroni/CIFAR_data")
+DEFAULT_DATA_ROOT = Path("data")
 
 
 def parse_args() -> argparse.Namespace:

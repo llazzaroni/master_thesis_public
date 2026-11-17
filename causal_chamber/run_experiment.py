@@ -30,7 +30,7 @@ IR_RESPONSE_COLUMNS = {"ir_1", "ir_2", "ir_3"}
 EXCLUDED_PREDICTOR_COLUMNS = METADATA_COLUMNS | IR_RESPONSE_COLUMNS
 
 
-DEFAULT_OUTPUT_ROOT = Path("/cluster/scratch/llazzaroni/causal_chamber_data")
+DEFAULT_OUTPUT_ROOT = Path("results/causal_chamber")
 
 
 def target_budget_pool(splits: dict[str, list[int]], target: str, seed: int) -> list[int]:

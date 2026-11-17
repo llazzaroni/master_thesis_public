@@ -23,7 +23,7 @@ sys.modules[spec.name] = shared
 spec.loader.exec_module(shared)
 
 CLASS_NAMES, CORRUPTIONS = shared.CLASS_NAMES, shared.CORRUPTIONS
-DEFAULT_ROOT = Path("/cluster/scratch/llazzaroni/CIFAR_data")
+DEFAULT_ROOT = Path("data")
 DEFAULT_BUDGETS = (50, 100, 200, 300, -1)
 DEFAULT_LAMBDAS = (0.0, 0.01, 0.03, 0.1, 0.3, 0.7, 1.0, 3.0)
 

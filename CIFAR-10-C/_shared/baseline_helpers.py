@@ -63,7 +63,7 @@ DEFAULT_BATCH_SIZE = 4096
 DEFAULT_PCA_ITERATED_POWER = 3
 DEFAULT_SEED = 42
 INPUT_SCALE = 255.0
-DEFAULT_CLUSTER_DATA_ROOT = Path("/cluster/scratch/llazzaroni/CIFAR_data")
+DEFAULT_CLUSTER_DATA_ROOT = Path("data")
 
 
 def parse_args() -> argparse.Namespace:

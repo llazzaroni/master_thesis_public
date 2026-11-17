@@ -10,7 +10,7 @@ import random
 from pathlib import Path
 
 
-DEFAULT_DATA_DIR = "/cluster/scratch/llazzaroni/causal_chamber_data/lt_interventions_standard_v1"
+DEFAULT_DATA_DIR = "data/causal_chamber"
 
 
 def describe_csv(path: Path) -> dict:
