@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Local data, model artifacts, and generated reports
+data/
+results/
+outputs/
+artifacts/
+*.npz
+*.npy
+*.pth
+*.pt
+*.h5
+*.parquet
+*.csv
+*.json
+*.png
+*.pdf
+*.svg
+
+# System/editor files
+.DS_Store
+.idea/
+.vscode/
